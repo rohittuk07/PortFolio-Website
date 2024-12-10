@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="Signup.css">
+    <!-- fontawesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="signup">
+        <div class="signup-img">
+            <p>3Elegant</p>
+            <img src="./images/signup.jpg" alt="">
+        </div>
+        <div class="signup-page">
+            <div class="form-container">
+                <h2>Sign up</h2>
+                <p>Already have an account?<a href="">Sign in</a></p>
+                <form class="inputBox">
+                    <input id="name-input" class="signup-input" type="text" placeholder="Your name" pattern="[A-Za-z]{3,15}" required>
+                    <input id="username-input" class="signup-input" type="text" placeholder="Username" pattern="[A-Za-z]{3,15}" required>
+                    <input id="email-input" class="signup-input" type="text" placeholder="Email Address" required>
+                    <div class="password-container">
+                        <input id="password-input" class="signup-input" type="password" placeholder="Password"><i class="fa-regular fa-eye-slash" onclick="changeEye()"></i>
+                    </div>
+                    <p><input type="checkbox" name="" id="checkBox">I agree with <span>Privacy Policy</span> and <span>Terms of Use</span></p>
+                <button onclick="submitForm(event)" id="btn" >Sign Up</button>
+                   
+                </form>
+                
+            </div>
+
+        
+        </div>
+
+    </div>
+    <script src="signup.js"></script>
+    
+    
+</body>
+</html>
